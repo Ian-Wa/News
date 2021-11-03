@@ -3,8 +3,6 @@
 import urllib.request, json
 from .models import Source,Top_Headlines,Everything
 
-
-
 #get the api key
 api_key = None
 
