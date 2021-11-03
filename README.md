@@ -58,3 +58,8 @@ Users would like to:
         $ python3.6 -m pip install Flask
         $ python3.6 -m pip install Flask-Bootstrap
         $ python3.6 -m pip install Flask-Script
+
+* To run the application, in your terminal:
+
+        $ chmod +x start.sh
+        $ ./start.sh
