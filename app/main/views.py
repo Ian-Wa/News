@@ -17,14 +17,7 @@ def index() :
   title = 'Reliable News '
   return render_template('index.html', title = title, sources = sources, Everything = Everything)
 
-# def Everything(trending) :
-#   '''
-#   view everything from the querry trending in english
-#   '''
-#   
-#   print(Everything)
 
-#   return render_template('index.html',  )
 
 @main.route('/source/<source>')
 def Top_Headlines(source) :
