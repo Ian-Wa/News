@@ -52,3 +52,9 @@ Users would like to:
                 python3.8 manage.py server
                 
         * Insert the API Key you received from News Api where <Your-Api-Key> is.
+
+* Installing Flask and other Modules
+
+        $ python3.6 -m pip install Flask
+        $ python3.6 -m pip install Flask-Bootstrap
+        $ python3.6 -m pip install Flask-Script
