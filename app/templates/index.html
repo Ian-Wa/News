@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+<!-- Styles block -->
+
+{% block styles%} {{ super() }}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Libre+Baskerville|Merienda|ZCOOL+XiaoWei" rel="stylesheet"> {% endblock %}
+
+<!-- Content block -->
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        
+
+        <div class="container col-md-7" style="background-color: #ffffff;
+    border: 1px solid #e8e8e9;float: left; margin-top: 6.2rem;">
+            <div>
+                <h2 class="text-center" style="size:21px;color: purple"> TOP AND TRENDING </h2>
+                <hr> {% for ian in Everything %} {% if ian.urlToImage%}
+                <div class="card">
+                    <div class="card-body">
+                        <h2 style="size:21px; color: rgb(49, 4, 49);" class="card-title ">{{ ian.title }}</h2>
+                        <hr>
+                        <p class="card-text text-body">{{ ian.description }}</p>
+
+
+                        <img src="{{ ian.urlToImage }}" class="card-img-top img-responsive" alt="...">
+                        <p class="card-text" style='text-align: right; padding-top: 1%;' class="text-muted">Article by {{ ian.author }} on {{ ian.publishedAt}}</p>
+                        <div class="text-center mt-3">
+                            <button type="button" class="btn btn-outline-success"><a class="text-warning" style="text-decoration: none;" href="{{ ian.url }}">READ MORE</a></button></div>
+                     
+                    </div>
+                    <br>
+                    <hr>
+                </div>
+                {% endif %} {% endfor %}
+            </div>
+        </div>
+
+        <div class="container col-md-5">
+            <div class="sidebar-sticky">
+                <nav class="d-none d-md-block bg-light sidebar">
+                    <div class="card container-fluid" style="width: 40rem; margin-left: -2rem; background-color: pink; margin-top: 6.1rem;">
+                        <div class="card-header">
+                            <h2 class="text-muted" style="color: purple"> SOURCES</h2>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            {% for source in sources %}
+                            <li class="list-group-item "><a  style="text-decoration: none; color: rgb(41, 11, 41);" href="/source/{{source.id}}">{{ source.name.upper() }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
