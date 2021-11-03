@@ -26,3 +26,9 @@ Users would like to:
 * python3.8
 * pip
 * virtualenv
+
+### Cloning
+* In your terminal:
+        
+        $ git clone https://github.com/ian-wa/News/
+        $ cd News
