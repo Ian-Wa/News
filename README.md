@@ -63,3 +63,8 @@ Users would like to:
 
         $ chmod +x start.sh
         $ ./start.sh
+
+## Testing the Application
+* To run the tests for the class files:
+
+        $ python3.8 manage.py tests
