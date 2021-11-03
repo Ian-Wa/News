@@ -18,7 +18,6 @@ def index() :
   return render_template('index.html', title = title, sources = sources, Everything = Everything)
 
 
-
 @main.route('/source/<source>')
 def Top_Headlines(source) :
   '''
