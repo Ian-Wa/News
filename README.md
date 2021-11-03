@@ -32,3 +32,10 @@ Users would like to:
         
         $ git clone https://github.com/ian-wa/News/
         $ cd News
+
+## Running the Application
+* Creating the virtual environment
+
+        $ python3.8 -m venv --without-pip virtual
+        $ source virtual/bin/env
+        $ curl https://bootstrap.pypa.io/get-pip.py | python 
