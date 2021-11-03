@@ -18,7 +18,6 @@ class ProdConfig(Config) :
     config : The parent configuration class with General configuration settings
   '''
   pass
-
 class DevConfig(Config) :
   '''
   Development configuration child class 
