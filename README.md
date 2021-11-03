@@ -68,3 +68,7 @@ Users would like to:
 * To run the tests for the class files:
 
         $ python3.8 manage.py tests
+
+## Technologies Used
+* Python3.8
+* Flask
